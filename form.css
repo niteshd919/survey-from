@@ -1,0 +1,23 @@
+.container{
+    background-color: beige;
+}
+
+.container h1,#description{
+    color: blue;
+    text-align: center;
+}
+div{
+    margin: 10px 0px 10px 20px;
+}
+
+.card{
+    opacity: 100%;
+}
+#dropdown{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    border-color: blue;
+    border-style: solid;
+    border-radius: 10%;
+}

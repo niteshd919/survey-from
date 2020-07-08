@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Survey Form
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Survey form">
+        <meta name="author" content="Nitesh Kumar Dixit">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./form.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">
+                Welcome to web dev survey form.
+            </h1>
+            <p id="description"> This will let you know you about the knowledge you have.</p>
+            <div class="card">
+                <form id="survey-form">
+                            <div class="form-group">
+                                <label for="name" id="name-label">Name</label>
+                                <input type="name" class="form-control" id="name" placeholder="Enter Full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" id="email-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email id" required>
+                             </div>
+                            <div class="form-group">
+                                <label for="number" id="number-label">Age</label>
+                                <input type="number" class="form-control" id="number" placeholder="Enter your Age" min="18" max="80" required>
+                            </div>
+                            <div class="dropdown" >
+                                <label for="framework">
+                                    Which Javascript framework do you like?
+                                </label>
+                                <select id="dropdown">
+                                    <option class="dropdown-item" >Angular</option>
+                                    <option class="dropdown-item" >React</option>
+                                    <option class="dropdown-item" >Vue</option>
+                            </select>
+                            </div>
+                            <div class="form-group form-check">
+                                <label> Why do you like it? </label>
+                                <div class="radio-group">
+                                    <input type="radio" class="form-check-input" name="like" id="code" value="code" />
+                                    <label for="code">Easy to code</label><br/>
+                                    <input type="radio" class="form-check-input" id="binding" name="like" value="binding"/>
+                                    <label for="binding" >Two-way data binding.</label><br/>
+                                    <input type="radio" class="form-check-input" id="weight" name="like" value="weight"/>
+                                    <label for="weight">Light weight.</label><br/>   
+                                </div>
+
+                            </div>
+                        
+                            <div class="form-group form-check">
+                               <label> What do you know about Front-end Development? </label>
+                                <div> 
+                                    <input type="checkbox" class="form-check-input" name="html" id="html" value="html">
+                                    <label class="form-check-label" for="html">HTML</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="form-check-input" id="css" value="css">
+                                    <label class="form-check-label" for="css">CSS</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="form-check-input" id="Javascript" value="javascript" >
+                                    <label class="form-check-label" for="Javascript">Javascript</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Any comments and suggetions?</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Plz drop your comment here..."></textarea>
+                            </div>
+
+                    <hr>                   
+                    <div>
+                        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
